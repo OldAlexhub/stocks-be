@@ -6,7 +6,7 @@ dotenv.config();
 const connectToPython = async (req, res) => {
   try {
     const { stock } = req.body; // Extract stock from request body
-    console.log(stock);
+    // console.log(stock);
 
     // Send the request to the Python API
     const response = await axios.post(`${process.env.PYTHON_CODE}/stocks`, {
